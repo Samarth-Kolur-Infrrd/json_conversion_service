@@ -1,0 +1,2609 @@
+{
+    "requestId": "6094ffb8-0d66-44ba-9d8b-29fba1398b79",
+    "status": "PROCESSING_COMPLETED",
+    "documents": [
+        {
+            "id": "5197f04a-c7b1-4011-9fe5-fa40d453a53c",
+            "name": "24e1b1f6_a7c7_4534_b7c5_e9220ec91e78_1-1.pdf",
+            "fileType": "pdf",
+            "status": "PROCESSING_COMPLETED",
+            "subStatus": "Corrected",
+            "docType": "ID_Card",
+            "splitDocumentUrl": "https://app.swbcprod.infrrd.cloud/doc/get/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/6094ffb8-0d66-44ba-9d8b-29fba1398b79/5197f04a-c7b1-4011-9fe5-fa40d453a53c/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1-1/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1-1.pdf",
+            "splitLevel": "1",
+            "parentDocumentId": "6094ffb8-0d66-44ba-9d8b-29fba1398b79_document-1",
+            "alphaId": "6094ffb8-0d66-44ba-9d8b-29fba1398b79_document-1",
+            "startPage": 1,
+            "endPage": 1,
+            "pageProbabilities": [
+                0.99
+            ],
+            "docTypeHierarchy": [
+                {
+                    "userModelId": "45c7a401-9e4c-454b-a6fd-33d0de4b4998",
+                    "classificationName": "DocumentType",
+                    "value": "ID Card",
+                    "confidence": 1.0,
+                    "additionalAttributes": {}
+                },
+                {
+                    "userModelId": "45c7a401-9e4c-454b-a6fd-33d0de4b4998",
+                    "classificationName": "DKI Review",
+                    "value": "None",
+                    "confidence": 1.0
+                },
+                {
+                    "userModelId": "45c7a401-9e4c-454b-a6fd-33d0de4b4998",
+                    "classificationName": "CollateralType",
+                    "value": "AUTO",
+                    "confidence": 1.0
+                },
+                {
+                    "userModelId": "list-classification",
+                    "classificationName": "LIST_TYPE",
+                    "value": "NON_LIIST",
+                    "confidence": 1.0
+                }
+            ],
+            "taggedDocTypeHierarchy": [
+                {
+                    "userModelId": "45c7a401-9e4c-454b-a6fd-33d0de4b4998",
+                    "classificationName": "DocumentType",
+                    "value": "ID Card",
+                    "confidence": 1.0,
+                    "additionalAttributes": {}
+                }
+            ],
+            "fields": [
+                {
+                    "id": "973ada17-e10a-42e0-97f7-3a6a229937b5",
+                    "name": "Agent Name",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 37,
+                    "endIndex": 44,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_796_304_1082_353",
+                            "word": "FOREMOST",
+                            "startX": 796,
+                            "startY": 304,
+                            "endX": 1082,
+                            "endY": 353,
+                            "pageNumber": 0,
+                            "startIndex": 37,
+                            "endIndex": 44
+                        }
+                    ],
+                    "value": "FOREMOST",
+                    "question": "Extract the Agent Name from the document using the following priority order:\r\n(1) If the document includes a Producer, extract the Producer\u2019s name as the Agent Name.\r\n(2) If no Producer is present, extract the name of the Agent (the person or agency representing the insurance carrier).\r\n(3) If neither an Agent nor a Producer name is present, extract the Carrier Name using these carrier extraction rules: First preference is the Carrier Logo \u2014 if a logo is present, extract exactly the carrier name from the logo, and do not replace it with any longer textual variation found elsewhere (if the AAA logo appears, extract \u201cAAA\u201d instead of \u201cInterinsurance Exchange of the Automobile Club\u201d).\r\n(4) If no logo is available, extract the primary carrier name from the document, including names found after labels such as \u201cCarrier:\u201d, \u201cInsurer:\u201d, or \u201cInsurance Company:\u201d.\r\n(5) Apply these special conditions: if the document contains \u201cSFPP\u201d, extract \u201cState Farm\u201d; if \u201cCountry Financial\u201d appears, extract \u201cCountry Financial\u201d; if \u201cPronto\u201d appears, extract \u201cPronto\u201d; if both \u201cKnightbrook\u201d and \u201cAggressive Insurance\u201d are mentioned, extract \u201cAggressive Insurance\u201d; if \u201cEndeavour General Agency LLC\u201d is mentioned, extract \u201cEndeavour General Agency LLC\u201d; if \u201cUS Agencies\u201d appears, extract \u201cUS Agencies\u201d.\r\n(6) Always return the extracted name exactly as it appears in the document unless it matches one of the special condition substitutions. (7) If none of the above are present, return no value.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "6299d31b-4c36-405a-8f35-4d3d1b903105",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "50f82a9a-91c9-40b6-a72a-db66145077b0",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 37,
+                            "endIndex": 44,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_796_304_1082_353",
+                                    "word": "FOREMOST",
+                                    "startX": 796,
+                                    "startY": 304,
+                                    "endX": 1082,
+                                    "endY": 353,
+                                    "pageNumber": 0,
+                                    "startIndex": 37,
+                                    "endIndex": 44
+                                }
+                            ],
+                            "value": "FOREMOST",
+                            "fieldId": "6299d31b-4c36-405a-8f35-4d3d1b903105",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "6fad559f-0932-40ee-81d5-0823a9169b1c",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 945,
+                            "endIndex": 952,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_797_1415_1085_1463",
+                                    "word": "FOREMOST",
+                                    "startX": 797,
+                                    "startY": 1415,
+                                    "endX": 1085,
+                                    "endY": 1463,
+                                    "pageNumber": 0,
+                                    "startIndex": 945,
+                                    "endIndex": 952
+                                }
+                            ],
+                            "value": "FOREMOST",
+                            "fieldId": "6299d31b-4c36-405a-8f35-4d3d1b903105",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 10
+                },
+                {
+                    "id": "14e99dd0-0b3d-4855-abcd-da5848482700",
+                    "name": "Carrier Agent Email",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.7,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "",
+                    "question": "Extract exactly one email address only if it is explicitly tied to the policy\u2019s servicing contacts and passes all of these constraints: the email must appear on the same line, within the same table cell, or within two lines of a positive anchor label for the policy\u2019s servicing party such as \u201cAgent,\u201d \u201cAgency,\u201d \u201cProducer,\u201d \u201cAgent Contact,\u201d \u201cServiced By,\u201d \u201cInsurance Company,\u201d \u201cInsurer,\u201d \u201cCarrier,\u201d or \u201cUnderwriting Company,\u201d and it must not be associated with any other roles (e.g., \u201cLienholder,\u201d \u201cLoss Payee,\u201d \u201cCredit Union,\u201d \u201cInsured,\u201d \u201cPolicyholder,\u201d \u201cMortgagee\u201d). Reject any email that appears in headers/footers or near phrases indicating enrollment, marketing, or mailing logistics, including (case-insensitive) \u201cInterested in receiving notices electronically,\u201d \u201cElectronic Service Requested,\u201d \u201cenroll,\u201d \u201ce-notice,\u201d \u201cpaperless,\u201d \u201cmailing,\u201d \u201ccertificate of mailing,\u201d \u201cfor questions call,\u201d \u201ccontact us,\u201d \u201ccustomer service,\u201d or \u201csupport.\u201d Explicitly exclude any address at the @dxc.com domain (e.g., incs.ops@dxc.com) and any email on the same line as those e-notice phrases, even if an anchor word is nearby. Do not return emails belonging to lienholders, policyholders, lenders, brokers not acting as the servicing agent of record, or third-party vendors. The email must be in a valid local@domain format and must be returned exactly as it appears without alteration. If no email satisfies the positive-anchor rule and all exclusions, return blank.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "4817fffc-3b82-4a12-92b1-a7756e19c69f",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "3eac92c2-e55f-47ff-a914-1d81bcbd7063",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "4817fffc-3b82-4a12-92b1-a7756e19c69f",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "d2a3f79f-a779-46e6-89da-8ad802713f6b",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "4817fffc-3b82-4a12-92b1-a7756e19c69f",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 11
+                },
+                {
+                    "id": "53958580-6de9-4675-bc7a-a59be585aeb3",
+                    "name": "Carrier Agent Fax",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.7,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "",
+                    "question": "Extract the Carrier Agent Fax number according to the following rules:\nPriority 1: Extract the FAX number of the agent or producer.\nPriority 2: If no agent or producer FAX number is found, extract the FAX number of the insurance company or carrier.\nAssociation requirement: Return the FAX number only if it is explicitly associated with the agent, producer, insurance company, or carrier.\n\nExclusions: Do not extract any FAX number associated with \u201ccredit union\u201d, \u201clienholder\u201d, \u201cpolicy holder\u201d, or any other unrelated party.\nIf not found: Return blank if no fax number is found.\nFormatting: Extract the fax number exactly as it appears in the document, preserving all dots, spaces, parentheses, or dashes but removing any trailing or leading text labels such as \u201cfax\u201d, \u201cfax:\u201d, \u201c(fax)\u201d, or similar.\n\nMultiple Numbers Rule:\nIf multiple fax numbers are attached together in a single field (e.g., separated by /, ,, ;, or |), return only the first fax number exactly as it appears, stopping before the delimiter.\nExamples:\n800 852 9001/800-852-9001 \u2192 800 852 9001\n(123) 456-7890, (987) 654-3210 \u2192 (123) 456-7890\n1-800-555-0000; 1-800-555-1111 \u2192 1-800-555-0000\n888-222-3333 | 888-444-5555 \u2192 888-222-3333",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "4ba9fc11-9b26-4626-87f8-56466496a5b7",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "ec87fe56-6d29-4e2e-abc3-e090b29782f6",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "4ba9fc11-9b26-4626-87f8-56466496a5b7",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "518541a4-5e08-45d5-bcc4-a5e98deae482",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "4ba9fc11-9b26-4626-87f8-56466496a5b7",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 12
+                },
+                {
+                    "id": "8b550d07-060b-4d17-af2a-ba77acadbaa3",
+                    "name": "Carrier Agent Phone Number",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 1.0,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "validationMessage": null
+                    },
+                    "wordCoordinates": [],
+                    "value": "-",
+                    "question": "Extract the Carrier Agent Phone Number according to the following rules:\nPriority 1: Extract the phone number that is explicitly associated with the agent or producer (e.g., \u201cAgent Phone\u201d, \u201cProducer: John Doe - (123) 456-7890\u201d, \u201cAgent: John Doe - (123) 456-7890\u201d).\nPriority 2: If no agent or producer phone number is found, extract the phone number associated with the carrier or insurance company (e.g., \u201cCarrier: GEICO - 1-877-434-3281\u201d).\nAssociation requirement: The phone number must have an associated keyword such as \u201cAgent\u201d, \u201cProducer\u201d, \u201cCarrier\u201d, or \u201cInsurance Company\u201d in the nearby text.\nExclusions: Do NOT extract phone numbers associated with Lienholder or any party other than Agent, Producer, or Carrier.\nFormatting: Extract the phone number exactly as it appears in the document, preserving all dots, spaces, parentheses, or dashes, but removing any trailing or leading text labels such as \u201cphone\u201d, \u201ctel\u201d, \u201ccall\u201d, or similar.\n\nMultiple Numbers Rule:\nIf multiple phone numbers are attached together in a single field (e.g., separated by /, ,, ;, or |), return only the first phone number exactly as it appears, stopping before the delimiter.\nExamples:\n800 852 9001/800-852-9001 \u2192 800 852 9001\n(123) 456-7890, (987) 654-3210 \u2192 (123) 456-7890\n1-800-555-0000; 1-800-555-1111 \u2192 1-800-555-0000\n888-222-3333 | 888-444-5555 \u2192 888-222-3333",
+                    "correctedQuestion": "Extract the Carrier Agent Phone Number according to the following rules:\nPriority 1: Extract the phone number that is explicitly associated with the agent or producer (e.g., \u201cAgent Phone\u201d, \u201cProducer: John Doe - (123) 456-7890\u201d, \u201cAgent: John Doe - (123) 456-7890\u201d).\nPriority 2: If no agent or producer phone number is found, extract the phone number associated with the carrier or insurance company (e.g., \u201cCarrier: GEICO - 1-877-434-3281\u201d).\nAssociation requirement: The phone number must have an associated keyword such as \u201cAgent\u201d, \u201cProducer\u201d, \u201cCarrier\u201d, or \u201cInsurance Company\u201d in the nearby text.\nExclusions: Do NOT extract phone numbers associated with Lienholder or any party other than Agent, Producer, or Carrier.\nFormatting: Extract the phone number exactly as it appears in the document, preserving all dots, spaces, parentheses, or dashes, but removing any trailing or leading text labels such as \u201cphone\u201d, \u201ctel\u201d, \u201ccall\u201d, or similar.\n\nMultiple Numbers Rule:\nIf multiple phone numbers are attached together in a single field (e.g., separated by /, ,, ;, or |), return only the first phone number exactly as it appears, stopping before the delimiter.\nExamples:\n800 852 9001/800-852-9001 \u2192 800 852 9001\n(123) 456-7890, (987) 654-3210 \u2192 (123) 456-7890\n1-800-555-0000; 1-800-555-1111 \u2192 1-800-555-0000\n888-222-3333 | 888-444-5555 \u2192 888-222-3333",
+                    "correctedBy": "3051807b-e40c-4b7e-991f-623db4ff6d6b",
+                    "correctedUserName": "apurwa.pawar@swbc.com",
+                    "correctedUserEmail": "apurwa.pawar@swbc.com",
+                    "correctedOn": "2026-08-12 08:40:17:869",
+                    "isCorrected": true,
+                    "extractedConfidence": 0.7,
+                    "fieldId": "73d9b132-6cb8-4b0d-b7c8-5f6a10f4c8d9",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "affbe961-b674-419e-94b6-9922e36d031c",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "73d9b132-6cb8-4b0d-b7c8-5f6a10f4c8d9",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "47e972fa-9260-452d-9fd4-fd9556120516",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "73d9b132-6cb8-4b0d-b7c8-5f6a10f4c8d9",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 13
+                },
+                {
+                    "id": "6db5312f-2fdf-4bd8-9aa9-aa3c12b004b9",
+                    "name": "Carrier Name",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 945,
+                    "endIndex": 952,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_797_1415_1085_1463",
+                            "word": "FOREMOST",
+                            "startX": 797,
+                            "startY": 1415,
+                            "endX": 1085,
+                            "endY": 1463,
+                            "pageNumber": 0,
+                            "startIndex": 945,
+                            "endIndex": 952
+                        }
+                    ],
+                    "value": "FOREMOST",
+                    "question": "Extract the Carrier Name from the document. Follow these rules strictly, and output only the carrier name exactly as it appears in the document (no extra words, no quotes, no labels).\nPrimary source = Logo/Image text\nIdentify company names from visible logos, mastheads, letterheads, watermarks, or branded marks on any page.\nPrefer the parent company\u2019s logo/name over an underwriting or subsidiary company\u2019s name.\nLogo cleanup: When extracting from a logo, exclude decorative marks, taglines, or special characters (\u2122, \u00ae, \u00a9, \u201c|\u201d, \u201c-\u201d, etc.). Capture only the actual carrier name text.\n\nAAA special case\nIf both \"AAA\" and Interinsurance Exchange of the Automobile Club appear, return AAA.\nIf AAA logo/name is not present but Interinsurance Exchange of the Automobile Club is, return Interinsurance Exchange of the Automobile Club exactly as shown.\n\nParent vs. subsidiary\nWhen both a parent and a subsidiary/underwriting company are present, return the parent company\u2019s name.\nTextual fallbacks (only if no logo/brand mark found)\nIf no logo text is available, extract the full carrier name explicitly stated in the document.\nLook for textual indicators such as: \u201cCarrier,\u201d \u201cInsurer,\u201d \u201cInsurance Company,\u201d \u201cCompany,\u201d \u201cIssued by,\u201d \u201cUnderwritten by,\u201d or header/footer branding.\nPrefer the parent company\u2019s name over underwriting entities when both appear.\n\nNo inference\nDo not infer or guess the carrier from policy numbers, NAIC codes, URLs, emails, addresses, or context. Extract only names that explicitly appear in the document.\n\nExact preservation\nPreserve the original casing, punctuation, accents, and spacing exactly as printed.\nIf multiple candidates remain\nChoose the name tied to the most prominent brand presentation (e.g., top-of-page masthead or largest logo).\nIf still tied, choose the one appearing first in reading order.\nIf nothing valid is present\nReturn nothing (leave the output blank). Do not write placeholders or explanations.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "51a04151-407e-4db7-9ddc-399d777339de",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "2d19ebbe-6b37-4f90-9ca6-42e3f9e1bb5d",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 945,
+                            "endIndex": 952,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_797_1415_1085_1463",
+                                    "word": "FOREMOST",
+                                    "startX": 797,
+                                    "startY": 1415,
+                                    "endX": 1085,
+                                    "endY": 1463,
+                                    "pageNumber": 0,
+                                    "startIndex": 945,
+                                    "endIndex": 952
+                                }
+                            ],
+                            "value": "FOREMOST",
+                            "fieldId": "51a04151-407e-4db7-9ddc-399d777339de",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "1954d2c7-930f-4ceb-a0d7-8dc0735e535c",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 37,
+                            "endIndex": 44,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_796_304_1082_353",
+                                    "word": "FOREMOST",
+                                    "startX": 796,
+                                    "startY": 304,
+                                    "endX": 1082,
+                                    "endY": 353,
+                                    "pageNumber": 0,
+                                    "startIndex": 37,
+                                    "endIndex": 44
+                                }
+                            ],
+                            "value": "FOREMOST",
+                            "fieldId": "51a04151-407e-4db7-9ddc-399d777339de",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 14
+                },
+                {
+                    "id": "f3595bf8-1052-4b96-8401-8f47a1dca41e",
+                    "name": "Collateral",
+                    "type": "Object List",
+                    "dataType": "object_list",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "isRCSRuleApplied": true
+                    },
+                    "values": [
+                        [
+                            {
+                                "value": "2025",
+                                "confidence": 0.95,
+                                "wordInfoList": [
+                                    {
+                                        "id": "token_0_99_588_178_624",
+                                        "value": "2025",
+                                        "startX": 99,
+                                        "startY": 588,
+                                        "endX": 178,
+                                        "endY": 624,
+                                        "pageNumber": 0,
+                                        "startIndex": 209,
+                                        "endIndex": 212
+                                    }
+                                ],
+                                "fieldName": "* Collateral Year",
+                                "objectId": "f69d6158-cd0e-443a-99c0-fbe3fc78de07",
+                                "fieldId": "8f5ca6de-6bde-4362-9814-5986ec0dbb8f",
+                                "displayName": "* Collateral Year",
+                                "fieldType": "Single Value",
+                                "dataType": "string",
+                                "additionalAttributes": {
+                                    "displayAsField": true,
+                                    "colorCode": "#D93E3E",
+                                    "isCriticalField": true,
+                                    "isRCSRuleApplied": true,
+                                    "validationMessage": null
+                                },
+                                "isCorrected": false,
+                                "position": 13,
+                                "question": "Extract the year of the collateral (vehicle) from the document according to the following rules:\nExact preservation: Extract the year value exactly as it appears in the document.\nFormat: The year may be in 2-digit or 4-digit format.\nIf it appears as 2 digits, return the 2 digits.\nIf it appears as 4 digits, return the 4 digits.\nNo alteration: Do not alter, convert, or expand the year format. Preserve it exactly.\nScope: Focus only on the section of the document that explicitly refers to the collateral and its associated year, ensuring that the year is clearly linked to collateral details.\n\nExclusions:\nDo not extract years from unrelated dates such as policy effective dates, change dates, or processing dates.\nDo not extract numbers from model codes, VIN fragments, or serial numbers that may look like years.\nNo inference: Do not infer, assume, or derive the collateral year from the VIN, model information, or any other context. Extract only if the year is explicitly stated in the document.\nIf not found: Return blank if no valid collateral year is present.",
+                                "pageNumber": 1,
+                                "startIndex": 0,
+                                "endIndex": 0
+                            },
+                            {
+                                "value": "MAZDA",
+                                "confidence": 0.95,
+                                "wordInfoList": [
+                                    {
+                                        "id": "token_0_191_588_337_625",
+                                        "value": "MAZDA",
+                                        "startX": 191,
+                                        "startY": 588,
+                                        "endX": 337,
+                                        "endY": 625,
+                                        "pageNumber": 0,
+                                        "startIndex": 214,
+                                        "endIndex": 218
+                                    }
+                                ],
+                                "fieldName": "* Collateral Make",
+                                "objectId": "f69d6158-cd0e-443a-99c0-fbe3fc78de07",
+                                "fieldId": "c3adf4a0-3302-405f-9844-1c7efb2f4945",
+                                "displayName": "* Collateral Make",
+                                "fieldType": "Single Value",
+                                "dataType": "string",
+                                "additionalAttributes": {
+                                    "displayAsField": true,
+                                    "isRCSRuleApplied": true,
+                                    "validationMessage": null
+                                },
+                                "isCorrected": false,
+                                "position": 14,
+                                "question": "Identify and extract only the vehicle make name from the given document exactly as it appears in the source, without any alteration. Preserve the original text exactly \u2014 do not expand abbreviations (e.g., \u201cCad\u201d must not become \u201cCadillac\u201d, \u201cvolks\u201d must not become \u201cVolkswagen\u201d), do not change case, do not reformat, and do not correct spelling. Ignore the model, year, trim, or any additional details. Return only the make name with no extra words, labels, or inferred content. If the make is shown as an abbreviation, output it exactly as shown. If no make is present, return a blank result.",
+                                "pageNumber": 1,
+                                "startIndex": 0,
+                                "endIndex": 0
+                            },
+                            {
+                                "value": "7MMVAADW9SN132641",
+                                "confidence": 0.95,
+                                "wordInfoList": [
+                                    {
+                                        "id": "token_0_467_588_901_625",
+                                        "value": "7MMVAADW9SN132641",
+                                        "startX": 467,
+                                        "startY": 588,
+                                        "endX": 901,
+                                        "endY": 625,
+                                        "pageNumber": 0,
+                                        "startIndex": 226,
+                                        "endIndex": 242
+                                    }
+                                ],
+                                "fieldName": "* Collateral ID",
+                                "objectId": "f69d6158-cd0e-443a-99c0-fbe3fc78de07",
+                                "fieldId": "aeb53a75-8194-425f-9f6c-6f7852277793",
+                                "displayName": "* Collateral ID",
+                                "fieldType": "Single Value",
+                                "dataType": "string",
+                                "additionalAttributes": {
+                                    "displayAsField": true,
+                                    "colorCode": "#D93E3E",
+                                    "isCriticalField": true,
+                                    "isRCSRuleApplied": true,
+                                    "validationMessage": null
+                                },
+                                "isCorrected": false,
+                                "position": 15,
+                                "question": "Extract the Collateral ID (typically VIN, Vehicle Identification Number, Vehicle Serial Number) from the document and return only the VIN string exactly as it appears in the document. Follow these rules strictly:\n\nA. What to capture:\nLook for terms like: VIN, Vehicle ID, Vehicle Identification Number, Vehicle Serial Number, or any similar terms that might label a VIN.\nExtract the VIN exactly as it appears in the document. Do not normalize, autocorrect, or retype any characters.\nDo not substitute similar-looking characters: Do not convert 0 \u2194 O, 1 \u2194 I/L, 2 \u2194 Z, 5 \u2194 S, or 8 \u2194 B. Keep characters exactly as shown.\nA valid VIN is typically 17 alphanumeric characters and must not contain the letters I, O, or Q.\nIf the labeled string does not meet the 17-character requirement, or contains the letters I, O, or Q, do not extract it. Instead, return blank.\n\nB. What to exclude:\nDo not extract unrelated numbers, such as loan numbers, policy numbers, generic IDs, or sequences like 0000000000123.\nIf the value is not clearly labeled as a VIN or related term, do not extract.\n\nC. Formatting and Validity Check:\nThe VIN should follow an alphanumeric format: e.g., ABCDE4DF3G2456742.\nIf \"O\" is detected convert to \"0\"\nIf \"I\" is detected convert to \"1\"\nIf \"Q\" is detected convert to \"0\"\n\nD. Output:\nReturn only the VIN string exactly as shown in the document. Do not return any labels, descriptions, or extra text.\nIf no valid VIN is present, or if the VIN does not meet the required conditions (17 characters, no I, O, Q), return blank.\n\nE. Final validation before output:\nOnly return the VIN if it is a valid 17-character VIN (with no I, O, or Q).\nIf the VIN does not meet these criteria, return blank.",
+                                "pageNumber": 1,
+                                "startIndex": 0,
+                                "endIndex": 0
+                            },
+                            {
+                                "value": "CX-50",
+                                "confidence": 0.5,
+                                "wordInfoList": [
+                                    {
+                                        "id": "token_0_348_588_455_625",
+                                        "value": "CX-50",
+                                        "startX": 348,
+                                        "startY": 588,
+                                        "endX": 455,
+                                        "endY": 625,
+                                        "pageNumber": 0,
+                                        "startIndex": 220,
+                                        "endIndex": 224
+                                    }
+                                ],
+                                "fieldName": "* Collateral Model",
+                                "objectId": "f69d6158-cd0e-443a-99c0-fbe3fc78de07",
+                                "fieldId": "8beb8e5b-387a-4f9a-a54d-923610f55f65",
+                                "displayName": "* Collateral Model",
+                                "fieldType": "Single Value",
+                                "dataType": "string",
+                                "additionalAttributes": {
+                                    "displayAsField": true,
+                                    "hideInUI": true,
+                                    "validationMessage": null
+                                },
+                                "isCorrected": false,
+                                "position": 18,
+                                "question": "Extract the vehicle model from given vehicle information if not found then return blank.",
+                                "pageNumber": 1,
+                                "startIndex": 0,
+                                "endIndex": 0
+                            },
+                            {
+                                "value": "MAZDA-25-2641",
+                                "confidence": 0.95,
+                                "wordInfoList": [],
+                                "fieldName": "* Collateral Tab Name",
+                                "objectId": "f69d6158-cd0e-443a-99c0-fbe3fc78de07",
+                                "fieldId": "42555293-d7f1-4aca-9b5a-3a8f36081aca",
+                                "displayName": "* Collateral Tab Name",
+                                "fieldType": "Single Value",
+                                "dataType": "string",
+                                "additionalAttributes": {
+                                    "displayAsField": true,
+                                    "hideInUI": true,
+                                    "isPrimary": true,
+                                    "validationMessage": null
+                                },
+                                "isCorrected": false,
+                                "position": 23,
+                                "isPrimary": true,
+                                "parentId": "7a972385-e212-4db1-8f82-4be98f9b4afd",
+                                "pageNumber": 1,
+                                "startIndex": 0,
+                                "endIndex": 0
+                            }
+                        ]
+                    ],
+                    "correctedBy": "3051807b-e40c-4b7e-991f-623db4ff6d6b",
+                    "correctedUserName": "apurwa.pawar@swbc.com",
+                    "correctedUserEmail": "apurwa.pawar@swbc.com",
+                    "correctedOn": "2026-08-12 08:40:17:867",
+                    "isCorrected": true,
+                    "extractedConfidence": 1.0,
+                    "fieldId": "7a972385-e212-4db1-8f82-4be98f9b4afd",
+                    "extractedUsing": "WRAPPER",
+                    "alternateCandidates": [],
+                    "order": 15
+                },
+                {
+                    "id": "23521cea-fb12-42ee-bb22-ccd132094777",
+                    "name": "Document Issue Date",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.7,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "08/10/2026",
+                    "question": "Extract the document issue date from the actual policy document only. Do not extract from fax cover pages, email cover pages, transmission pages, or system metadata.\n\nDefinition:\nThe Document Issue Date is the date the document was issued, generated, printed, mailed, prepared, processed, produced, signed, completed, or otherwise officially created as a document.\n\nPrimary target:\nLook for dates associated with labels such as:\nIssue Date, Printed Date, Date of Notice, Mailing Date, Mailed, Document Created, Created, Generated Date, Generated On, Prepared Date, Produced, Processed Date, Entry Date, Value Date, Statement Date, Completed Date, Signed, Countersigned, Review Date, Run On Date, Website Date, Online Policy Summary As Of Date, Information As On Date, Date and Time Requested, Billing Date, Calendar Date, Transmit Date, or equivalent issue-related wording.\n\nPositional priority:\nPrefer dates located in the top or middle section of the actual document content.\nStrongly prefer dates that are near a clear header, title, labeled field, or main body content.\nDo not select dates from the bottom/footer area of the page unless they are explicitly tied to an issue-related label such as Printed Date, Generated On, or Mailed Date.\nStandalone dates appearing at the very bottom of the page, especially near page numbers, barcodes, reference numbers, form codes, print batches, or footer text, must be ignored.\n\nDo not use:\nApplication Date, Effective Date, Expiration Date, Renewal Date, Inception Date, Invoice Date, Transaction Effective Date, Fax Date, email dates, or any future date later than today.\nDo not use dates that clearly belong to the policy period, coverage term, renewal period, or effective/expiration range.\n\nFooter exclusion rule:\nIgnore any unlabeled or weakly labeled date found in the bottom margin or footer area of the page.\nIgnore dates next to page indicators such as Page X of Y.\nIgnore dates near document control numbers, print run numbers, form numbers, version numbers, batch numbers, reference IDs, or other footer metadata.\nA bottom-of-page date is valid only if it has a clear and direct issue-related label.\n\nSelection rule:\nIf multiple candidate dates are present, choose the one most directly tied to document issuance or production.\nPriority order:\n1. Explicitly labeled issue-related date\n2. Clearly issue-related date in the top or middle of the page\n3. Clearly issue-related date in another location\nNever prefer an unlabeled footer date over a labeled date in the main content.\n\nExclusions:\nIgnore fax/email headers and transmission metadata such as Fax, Email, To, From, Subject, Sent, Received, Transmission, or similar routing information.\n\nOutput:\nReturn only the date in MM/DD/YYYY format.\n\nIf not found:\nReturn \"\".",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "5d4e556e-f865-4b37-8a8f-30ca43118357",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "77c471aa-b248-471c-89fd-411c5af71993",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "5d4e556e-f865-4b37-8a8f-30ca43118357",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "38257543-aaf3-45b4-b3f7-c5d3794e00e3",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "5d4e556e-f865-4b37-8a8f-30ca43118357",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 16
+                },
+                {
+                    "id": "6f3e02f2-2937-489b-9026-581855ddba18",
+                    "name": "Insurance Type",
+                    "type": "Object",
+                    "dataType": "dropdown",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.95,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "hideInUI": true,
+                        "defaultValue": "Dual"
+                    },
+                    "wordCoordinates": [],
+                    "value": "CONTINUOUS",
+                    "valueObject": {
+                        "dropdownValue": "Continuous",
+                        "value": "CONTINUOUS"
+                    },
+                    "question": "",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "45d1c02b-f48e-42c8-be7e-5565b956f572",
+                    "extractedUsing": "NER",
+                    "alternateCandidates": [
+                        {
+                            "id": "0da5d74e-5185-4986-b564-b07b8d5ea1b1",
+                            "type": "Object",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 1.0,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "45d1c02b-f48e-42c8-be7e-5565b956f572",
+                            "extractedUsing": "NER",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 17
+                },
+                {
+                    "id": "ddaf20c1-4944-4222-9eed-c7a49a1b002f",
+                    "name": "Loan Number",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.7,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "",
+                    "question": "Extract any number labelled as a \"Loan Number\". Do not extract the policy number or any other number where it's not specified as \"loan number\". Return blank if not found.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "a429251c-fc19-4e97-bd9f-2cc520167338",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "ffc6ada0-212f-451e-b614-1fab4a6a35c5",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "a429251c-fc19-4e97-bd9f-2cc520167338",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "050f0475-cd8d-4741-bef7-8c167c0066f0",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "a429251c-fc19-4e97-bd9f-2cc520167338",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 18
+                },
+                {
+                    "id": "5041bb6e-7831-43e0-b595-04dbba89c147",
+                    "name": "Policy Effective Date",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 178,
+                    "endIndex": 187,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_507_507_688_550",
+                            "word": "05/01/2026",
+                            "startX": 507,
+                            "startY": 507,
+                            "endX": 688,
+                            "endY": 550,
+                            "pageNumber": 0,
+                            "startIndex": 178,
+                            "endIndex": 187
+                        }
+                    ],
+                    "value": "05/01/2026",
+                    "question": "Extract the Policy Effective Date from the document. Follow these rules strictly: \nA. Output rules Return only the date exactly what appears in the document. Add leading zeros where needed (e.g.,\n01/05/2025 not 1/5/25). Do not output any extra text, labels, punctuation, or notes. If the\ndocument contains only a 2-digit year (e.g., 01/05/25), convert it to 4-digit by assuming 20xx\n-> 01/05/2025. \nB. What to capture (and not capture) Capture only dates explicitly tied to the\nfield label: \u201cPolicy Effective Date\u201d or \u201cEffective Date.\u201d Ignore unrelated dates such as payment\ndue dates, billing dates, claim dates, or underwriting reference dates. \nC. Handling ranges If\nthe document shows a coverage period as a date range (e.g., 01/05/2025 - 01/05/2026),\nextract the first date (01/05/2025). \nD. Invalid or missing cases If no valid date for the field is\nfound -> return blank (empty output). Do not infer or copy other date values. \nE. Ensure the extracted value is exactly what appears in the document, with no normalization or formatting changes.\n",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "09d55f65-c584-4322-a8d1-d22de509ea45",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "81e2d16d-eeba-4ab6-84c9-90e9f6417737",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 178,
+                            "endIndex": 187,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_507_507_688_550",
+                                    "word": "05/01/2026",
+                                    "startX": 507,
+                                    "startY": 507,
+                                    "endX": 688,
+                                    "endY": 550,
+                                    "pageNumber": 0,
+                                    "startIndex": 178,
+                                    "endIndex": 187
+                                }
+                            ],
+                            "value": "05/01/2026",
+                            "fieldId": "09d55f65-c584-4322-a8d1-d22de509ea45",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "48256b75-dc2b-48ac-936b-c37d3c2b0dad",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 178,
+                            "endIndex": 187,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_507_507_688_550",
+                                    "word": "05/01/2026",
+                                    "startX": 507,
+                                    "startY": 507,
+                                    "endX": 688,
+                                    "endY": 550,
+                                    "pageNumber": 0,
+                                    "startIndex": 178,
+                                    "endIndex": 187
+                                }
+                            ],
+                            "value": "05/01/2026",
+                            "fieldId": "09d55f65-c584-4322-a8d1-d22de509ea45",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 19
+                },
+                {
+                    "id": "de9c2b88-5fa2-4a84-90cf-9349a4bb204f",
+                    "name": "Policy Expiration Date",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 198,
+                    "endIndex": 207,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_849_508_1027_550",
+                            "word": "11/01/2026",
+                            "startX": 849,
+                            "startY": 508,
+                            "endX": 1027,
+                            "endY": 550,
+                            "pageNumber": 0,
+                            "startIndex": 198,
+                            "endIndex": 207
+                        }
+                    ],
+                    "value": "11/01/2026",
+                    "question": "Extract the \u201cPolicy Expiry Date\u201d from the document following the below logics:\n\nWhat to return (priority order):\nIf the document explicitly lists an expiry/expiration/end date (e.g., \u201cExpiration Date: Dec 04 2024\u201d, \u201cPolicy Period: 06/01/2024 - 12/01/2024\u201d), return only the end date exactly as it appears.\nIgnore times (e.g., \u201c12:01 a.m.\u201d) and time zones.\nIf no date is given but the policy uses wording that indicates no fixed end date (e.g., \u201cUNTIL TERMINATED\u201d, \u201cUNTIL CANCELLED\u201d, \u201cUNTIL CANCELED\u201d, \u201cNO EXPIRATION\u201d, \u201cIN FORCE UNTIL TERMINATED\u201d), return that wording exactly as it appears (preserve case, spacing, punctuation).\nIf neither an expiry date nor such wording is present, return a blank value (no text).\n\nWhere to look (most relevant phrases/labels):\n\u201cExpiration Date\u201d, \u201cExpiry Date\u201d, \u201cPolicy Expiration/Expiry\u201d, \u201cPolicy End Date\u201d, \u201cEnd of Term\u201d, \u201cCoverage ends\u201d, \u201cPolicy Period\u201d,\n\u201cFrom/To\u201d, \u201cEffective \u2026 to \u2026\u201d, \u201cPolicy Effective \u2026 until \u2026\u201d.\nPrefer information near headings like \u201cPOLICY PERIOD\u201d, \u201cPOLICY EFFECTIVE\u201d, \u201cDECLARATIONS\u201d, \u201cCOVERAGE\u201d.\n\nDisambiguation rules:\nIf a date range is shown (e.g., \u201cPolicy Period: 06/01/2024 to 12/01/2024\u201d), return the second (end) date only, as printed.\nIf both effective and expiration dates appear, choose the expiration/end date, not the effective/start date.\nIf multiple policies/vehicles are listed, prefer the primary policy\u2019s expiration date (closest to a main \u201cPolicy Period/Expiration\u201d heading).\nDo not compute or infer dates (e.g., do not add months/terms). Extract only what is printed.\nIf wording like \u201cUNTIL TERMINATED\u201d appears alongside a start/effective date, return only the wording (not the start date).\n\nOutput format:\nReturn only one value:\nEither the end date exactly as it appears in the document, or\nThe exact wording (e.g., UNTIL TERMINATED).\nNo labels, notes, or extra text.\n\nExamples:\n\u201cPolicy Period: 06/01/2024 - 12/01/2024\u201d -> 12/01/2024\n\u201cExpiration Date: Dec 4 2024 at 12:01 a.m.\u201d -> Dec 4 2024\n\u201cPOLICY EFFECTIVE DEC 04 2024 UNTIL TERMINATED\u201d -> UNTIL TERMINATED\n\u201cCoverage: Effective 01/15/2024 to 1/15/2025\u201d -> 1/15/2025\nOnly \u201cEffective Date: 03/01/2024\u201d (no end/wording) -> (blank)",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "615f78d1-dd14-4f75-a138-edf46a135b83",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "350db620-5524-48ee-b910-1d33c6562eb9",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 198,
+                            "endIndex": 207,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_849_508_1027_550",
+                                    "word": "11/01/2026",
+                                    "startX": 849,
+                                    "startY": 508,
+                                    "endX": 1027,
+                                    "endY": 550,
+                                    "pageNumber": 0,
+                                    "startIndex": 198,
+                                    "endIndex": 207
+                                }
+                            ],
+                            "value": "11/01/2026",
+                            "fieldId": "615f78d1-dd14-4f75-a138-edf46a135b83",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "2cb9eac7-83d9-426c-8cf8-2bf87a16cbea",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 198,
+                            "endIndex": 207,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_849_508_1027_550",
+                                    "word": "11/01/2026",
+                                    "startX": 849,
+                                    "startY": 508,
+                                    "endX": 1027,
+                                    "endY": 550,
+                                    "pageNumber": 0,
+                                    "startIndex": 198,
+                                    "endIndex": 207
+                                }
+                            ],
+                            "value": "11/01/2026",
+                            "fieldId": "615f78d1-dd14-4f75-a138-edf46a135b83",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 20
+                },
+                {
+                    "id": "2ae59b29-c422-4055-b1e5-ae1249710995",
+                    "name": "Policy Holder Address",
+                    "type": "Split Field",
+                    "dataType": "address",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 458,
+                    "endIndex": 563,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_100_703_180_740",
+                            "word": "2780",
+                            "startX": 100,
+                            "startY": 703,
+                            "endX": 180,
+                            "endY": 740,
+                            "pageNumber": 0,
+                            "startIndex": 458,
+                            "endIndex": 461
+                        },
+                        {
+                            "id": "token_0_192_704_228_740",
+                            "word": "W",
+                            "startX": 192,
+                            "startY": 704,
+                            "endX": 228,
+                            "endY": 740,
+                            "pageNumber": 0,
+                            "startIndex": 463,
+                            "endIndex": 463
+                        },
+                        {
+                            "id": "token_0_243_704_351_739",
+                            "word": "149TH",
+                            "startX": 243,
+                            "startY": 704,
+                            "endX": 351,
+                            "endY": 739,
+                            "pageNumber": 0,
+                            "startIndex": 465,
+                            "endIndex": 469
+                        },
+                        {
+                            "id": "token_0_364_704_449_739",
+                            "word": "AVE",
+                            "startX": 364,
+                            "startY": 704,
+                            "endX": 449,
+                            "endY": 739,
+                            "pageNumber": 0,
+                            "startIndex": 471,
+                            "endIndex": 473
+                        },
+                        {
+                            "id": "token_0_101_752_371_788",
+                            "word": "BROOMFIELD,",
+                            "startX": 101,
+                            "startY": 752,
+                            "endX": 371,
+                            "endY": 788,
+                            "pageNumber": 0,
+                            "startIndex": 539,
+                            "endIndex": 549
+                        },
+                        {
+                            "id": "token_0_382_753_436_788",
+                            "word": "CO",
+                            "startX": 382,
+                            "startY": 753,
+                            "endX": 436,
+                            "endY": 788,
+                            "pageNumber": 0,
+                            "startIndex": 551,
+                            "endIndex": 552
+                        },
+                        {
+                            "id": "token_0_449_753_644_788",
+                            "word": "80023-9498",
+                            "startX": 449,
+                            "startY": 753,
+                            "endX": 644,
+                            "endY": 788,
+                            "pageNumber": 0,
+                            "startIndex": 554,
+                            "endIndex": 563
+                        }
+                    ],
+                    "value": "2780 W 149TH AVE BROOMFIELD, CO 80023-9498",
+                    "question": "Extract the full address of the policy holder (also referred to as the \u201cnamed insured\u201d or \u201cinsured\u201d) exactly as it appears in the document, including street address, apartment or unit numbers, city, state, and ZIP Code.\n\nRules:\nPreserve every character exactly as shown, including commas, hyphens, slashes, periods, \u201c#\u201d, and spaces; never add, remove, or substitute these characters.\nExtract the ZIP Code exactly as it appears in the document (ZIP or ZIP+4, keep the hyphen if present).\nPrefer the address that appears in or immediately under the Named Insured(s) / Insured block (the policy holder block).\nOnly extract the address if it clearly belongs to the policy holder; do not extract addresses for lienholders, credit unions (CU/FCU), loss payees, insurance carriers, or agents.\nIf the address spans multiple lines, output it on a single line by concatenating the lines with a single space at each line break while preserving all punctuation (e.g., keep \u201c, \u201d and \u201c-\u201d exactly as in the source).\nDo not normalize casing, abbreviations, or spacing; do not reformat city\u2013state; if the source shows \u201cCITY, ST\u201d, keep the comma.\nIf the policy holder\u2019s address is not explicitly mentioned, return a blank result.\n\nOutput format: Address string only, exactly as written in the document (one line), no extra text. If no address is found, output nothing.\n\nExamples:\n\u201c6750 W 67TH AVE APT# 124 DENVER, CO 80204\u201d\n\u201c1130 W CROCKETT ST ALAMO, TX 78516-6624\u201d",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "8ee0073d-710a-4868-8e44-98b9ae8cd833",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "d8b96bad-4dee-4da8-90a1-dce493ff121f",
+                            "type": "Split Field",
+                            "dataType": "address",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 458,
+                            "endIndex": 563,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_100_703_180_740",
+                                    "word": "2780",
+                                    "startX": 100,
+                                    "startY": 703,
+                                    "endX": 180,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 458,
+                                    "endIndex": 461
+                                },
+                                {
+                                    "id": "token_0_192_704_228_740",
+                                    "word": "W",
+                                    "startX": 192,
+                                    "startY": 704,
+                                    "endX": 228,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 463,
+                                    "endIndex": 463
+                                },
+                                {
+                                    "id": "token_0_243_704_351_739",
+                                    "word": "149TH",
+                                    "startX": 243,
+                                    "startY": 704,
+                                    "endX": 351,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 465,
+                                    "endIndex": 469
+                                },
+                                {
+                                    "id": "token_0_364_704_449_739",
+                                    "word": "AVE",
+                                    "startX": 364,
+                                    "startY": 704,
+                                    "endX": 449,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 471,
+                                    "endIndex": 473
+                                },
+                                {
+                                    "id": "token_0_101_752_371_788",
+                                    "word": "BROOMFIELD,",
+                                    "startX": 101,
+                                    "startY": 752,
+                                    "endX": 371,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 539,
+                                    "endIndex": 549
+                                },
+                                {
+                                    "id": "token_0_382_753_436_788",
+                                    "word": "CO",
+                                    "startX": 382,
+                                    "startY": 753,
+                                    "endX": 436,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 551,
+                                    "endIndex": 552
+                                },
+                                {
+                                    "id": "token_0_449_753_644_788",
+                                    "word": "80023-9498",
+                                    "startX": 449,
+                                    "startY": 753,
+                                    "endX": 644,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 554,
+                                    "endIndex": 563
+                                }
+                            ],
+                            "value": "2780 W 149TH AVE BROOMFIELD, CO 80023-9498",
+                            "fieldId": "8ee0073d-710a-4868-8e44-98b9ae8cd833",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "80549155-dce9-46d8-8496-0a12aaa03224",
+                            "type": "Split Field",
+                            "dataType": "address",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 458,
+                            "endIndex": 563,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_100_703_180_740",
+                                    "word": "2780",
+                                    "startX": 100,
+                                    "startY": 703,
+                                    "endX": 180,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 458,
+                                    "endIndex": 461
+                                },
+                                {
+                                    "id": "token_0_192_704_228_740",
+                                    "word": "W",
+                                    "startX": 192,
+                                    "startY": 704,
+                                    "endX": 228,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 463,
+                                    "endIndex": 463
+                                },
+                                {
+                                    "id": "token_0_243_704_351_739",
+                                    "word": "149TH",
+                                    "startX": 243,
+                                    "startY": 704,
+                                    "endX": 351,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 465,
+                                    "endIndex": 469
+                                },
+                                {
+                                    "id": "token_0_364_704_449_739",
+                                    "word": "AVE",
+                                    "startX": 364,
+                                    "startY": 704,
+                                    "endX": 449,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 471,
+                                    "endIndex": 473
+                                },
+                                {
+                                    "id": "token_0_101_752_371_788",
+                                    "word": "BROOMFIELD,",
+                                    "startX": 101,
+                                    "startY": 752,
+                                    "endX": 371,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 539,
+                                    "endIndex": 549
+                                },
+                                {
+                                    "id": "token_0_382_753_436_788",
+                                    "word": "CO",
+                                    "startX": 382,
+                                    "startY": 753,
+                                    "endX": 436,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 551,
+                                    "endIndex": 552
+                                },
+                                {
+                                    "id": "token_0_449_753_644_788",
+                                    "word": "80023-9498",
+                                    "startX": 449,
+                                    "startY": 753,
+                                    "endX": 644,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 554,
+                                    "endIndex": 563
+                                }
+                            ],
+                            "value": "2780 W 149TH AVE BROOMFIELD, CO 80023-9498",
+                            "fieldId": "8ee0073d-710a-4868-8e44-98b9ae8cd833",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 21
+                },
+                {
+                    "id": "b3df902c-42a9-47ee-9b10-6a4220b4da6f",
+                    "name": "Policy Holder Address Street Name",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "hideInUI": true,
+                        "displayAsField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_243_704_351_739",
+                            "word": "149TH",
+                            "startX": 243,
+                            "startY": 704,
+                            "endX": 351,
+                            "endY": 739,
+                            "pageNumber": 0,
+                            "startIndex": 465,
+                            "endIndex": 469
+                        },
+                        {
+                            "id": "token_0_364_704_449_739",
+                            "word": "AVE",
+                            "startX": 364,
+                            "startY": 704,
+                            "endX": 449,
+                            "endY": 739,
+                            "pageNumber": 0,
+                            "startIndex": 471,
+                            "endIndex": 473
+                        },
+                        {
+                            "id": "token_0_192_704_228_740",
+                            "word": "W",
+                            "startX": 192,
+                            "startY": 704,
+                            "endX": 228,
+                            "endY": 740,
+                            "pageNumber": 0,
+                            "startIndex": 463,
+                            "endIndex": 463
+                        }
+                    ],
+                    "value": "W 149TH AVE",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "f7c425b7-b7f4-46af-bd93-6694072ba091",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "558838d8-9007-4988-99de-29f3e539fe70",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_243_704_351_739",
+                                    "word": "149TH",
+                                    "startX": 243,
+                                    "startY": 704,
+                                    "endX": 351,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 465,
+                                    "endIndex": 469
+                                },
+                                {
+                                    "id": "token_0_364_704_449_739",
+                                    "word": "AVE",
+                                    "startX": 364,
+                                    "startY": 704,
+                                    "endX": 449,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 471,
+                                    "endIndex": 473
+                                },
+                                {
+                                    "id": "token_0_192_704_228_740",
+                                    "word": "W",
+                                    "startX": 192,
+                                    "startY": 704,
+                                    "endX": 228,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 463,
+                                    "endIndex": 463
+                                }
+                            ],
+                            "value": "W 149TH AVE",
+                            "fieldId": "f7c425b7-b7f4-46af-bd93-6694072ba091",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "7fe86a81-5f96-451a-8372-0066a7c6058b",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_243_704_351_739",
+                                    "word": "149TH",
+                                    "startX": 243,
+                                    "startY": 704,
+                                    "endX": 351,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 465,
+                                    "endIndex": 469
+                                },
+                                {
+                                    "id": "token_0_364_704_449_739",
+                                    "word": "AVE",
+                                    "startX": 364,
+                                    "startY": 704,
+                                    "endX": 449,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 471,
+                                    "endIndex": 473
+                                },
+                                {
+                                    "id": "token_0_192_704_228_740",
+                                    "word": "W",
+                                    "startX": 192,
+                                    "startY": 704,
+                                    "endX": 228,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 463,
+                                    "endIndex": 463
+                                }
+                            ],
+                            "value": "W 149TH AVE",
+                            "fieldId": "f7c425b7-b7f4-46af-bd93-6694072ba091",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 22
+                },
+                {
+                    "id": "c300f33e-61f4-4659-b409-b880799b67e1",
+                    "name": "Policy Holder Address Unit Number",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.7,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "hideInUI": true,
+                        "displayAsField": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "8958b0c9-ff68-485b-83d3-cde809a3e2aa",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "f20fdf1a-5814-4302-b5e8-60b74ed26961",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "8958b0c9-ff68-485b-83d3-cde809a3e2aa",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "b9b6b055-4e8b-423f-bdaf-d26209f41a24",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "8958b0c9-ff68-485b-83d3-cde809a3e2aa",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 23
+                },
+                {
+                    "id": "2e24e9b2-eaaa-4d76-8862-1004c62c4f82",
+                    "name": "Policy Holder City",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_101_752_371_788",
+                            "word": "BROOMFIELD,",
+                            "startX": 101,
+                            "startY": 752,
+                            "endX": 371,
+                            "endY": 788,
+                            "pageNumber": 0,
+                            "startIndex": 539,
+                            "endIndex": 549
+                        }
+                    ],
+                    "value": "BROOMFIELD",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "fa435683-aa01-4de6-8a22-b76adc2fd68d",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "cd4f6e88-f792-4180-833e-f1a06eb3c30e",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_101_752_371_788",
+                                    "word": "BROOMFIELD,",
+                                    "startX": 101,
+                                    "startY": 752,
+                                    "endX": 371,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 539,
+                                    "endIndex": 549
+                                }
+                            ],
+                            "value": "BROOMFIELD",
+                            "fieldId": "fa435683-aa01-4de6-8a22-b76adc2fd68d",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "95cfa78f-9c12-474d-89e6-6e8a12df0567",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_101_752_371_788",
+                                    "word": "BROOMFIELD,",
+                                    "startX": 101,
+                                    "startY": 752,
+                                    "endX": 371,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 539,
+                                    "endIndex": 549
+                                }
+                            ],
+                            "value": "BROOMFIELD",
+                            "fieldId": "fa435683-aa01-4de6-8a22-b76adc2fd68d",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 24
+                },
+                {
+                    "id": "e4573988-5991-4cff-a415-b6c6c3613db2",
+                    "name": "Policy Holder Name",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 323,
+                    "endIndex": 336,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_99_656_259_693",
+                            "word": "JESSICA",
+                            "startX": 99,
+                            "startY": 656,
+                            "endX": 259,
+                            "endY": 693,
+                            "pageNumber": 0,
+                            "startIndex": 323,
+                            "endIndex": 329
+                        },
+                        {
+                            "id": "token_0_270_657_423_693",
+                            "word": "MILLER",
+                            "startX": 270,
+                            "startY": 657,
+                            "endX": 423,
+                            "endY": 693,
+                            "pageNumber": 0,
+                            "startIndex": 331,
+                            "endIndex": 336
+                        }
+                    ],
+                    "value": "JESSICA MILLER",
+                    "question": "Extract the First Policy Holder Name from the document & Follow these rules strictly:\nA. What to capture:\nLook for keywords like: Insured Name, Owner, Policyholder, Insured, and Name: (especially in uppercase label formats).\nExtract only the first policy holder\u2019s name in case there are multiple names listed.\nExample: If names are listed as William, Robert and Linda, only extract \u201cWilliam, Robert\u201d.\nDo not include connector words such as \u201c&\u201d or \u201cand\u201d in the extracted name. Ignore them completely.\nDo not alter or modify the name in any way. Do not reformat or split first and last names.\nPreserve the exact original case, spacing, punctuation, and special characters for the first policy holder only.\nIf the name includes multiple people, extract only the first name listed, excluding any connectors.\nIf the Policy Holder is a company name, extract the company name exactly as it appears (including any special characters).\n\nB. Output format:\nReturn only the name (nothing else).\nDo not include labels, notes, or anything apart from the name itself.\n\nC. Examples of correct output:\nWilliam, Robert and Linda \u2192 \u201cWilliam, Robert\u201d\nALEX KIM \u2192 \u201cALEX KIM\u201d\nMARIA KIM \u2192 \u201cMARIA KIM\u201d\nALEX and MARIA KIM \u2192 \u201cALEX\u201d\nENRIQUE MORENO, LAURA MORENO \u2192 \u201cENRIQUE MORENO\u201d\nENRIQUE MORENO and LAURA MORENO J \u2192 \u201cENRIQUE MORENO\u201d\nCompany name: ACME INSURANCE, INC. \u2192 \u201cACME INSURANCE, INC.\u201d\nInsured Name: JOHN DOE \u2192 \u201cJOHN DOE\u201d\nName: XYZ DBA, ABCD \u2192 \u201cXYZ DBA, ABCD\u201d\n\nD. No inferences or transformations:\nDo not infer or guess names if not explicitly written.\nDo not split, reorder, or assume formatting.\nExample: John, Smith \u2192 \u201cJohn, Smith\u201d (not \u201cSmith, John\u201d).\nIf multiple names are present (e.g., John, Smith and Jane), extract only the first holder\u2019s name (John, Smith).\nIf names are separated by commas, dashes, or other punctuation, return the first name exactly as written, excluding any following connectors like \u201c&\u201d or \u201cand\u201d.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "9c447272-34d0-4e52-a4f6-52757311e64b",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "e4d1795a-dffd-45c8-bf8a-eed9ebc0b000",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 323,
+                            "endIndex": 336,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_99_656_259_693",
+                                    "word": "JESSICA",
+                                    "startX": 99,
+                                    "startY": 656,
+                                    "endX": 259,
+                                    "endY": 693,
+                                    "pageNumber": 0,
+                                    "startIndex": 323,
+                                    "endIndex": 329
+                                },
+                                {
+                                    "id": "token_0_270_657_423_693",
+                                    "word": "MILLER",
+                                    "startX": 270,
+                                    "startY": 657,
+                                    "endX": 423,
+                                    "endY": 693,
+                                    "pageNumber": 0,
+                                    "startIndex": 331,
+                                    "endIndex": 336
+                                }
+                            ],
+                            "value": "JESSICA MILLER",
+                            "fieldId": "9c447272-34d0-4e52-a4f6-52757311e64b",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "7a9688cc-38eb-484d-920f-c2cd98f0ef14",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 323,
+                            "endIndex": 336,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_99_656_259_693",
+                                    "word": "JESSICA",
+                                    "startX": 99,
+                                    "startY": 656,
+                                    "endX": 259,
+                                    "endY": 693,
+                                    "pageNumber": 0,
+                                    "startIndex": 323,
+                                    "endIndex": 329
+                                },
+                                {
+                                    "id": "token_0_270_657_423_693",
+                                    "word": "MILLER",
+                                    "startX": 270,
+                                    "startY": 657,
+                                    "endX": 423,
+                                    "endY": 693,
+                                    "pageNumber": 0,
+                                    "startIndex": 331,
+                                    "endIndex": 336
+                                }
+                            ],
+                            "value": "JESSICA MILLER",
+                            "fieldId": "9c447272-34d0-4e52-a4f6-52757311e64b",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 25
+                },
+                {
+                    "id": "142f223a-072a-4cc7-a1d6-60429f141729",
+                    "name": "Policy Holder State",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_382_753_436_788",
+                            "word": "CO",
+                            "startX": 382,
+                            "startY": 753,
+                            "endX": 436,
+                            "endY": 788,
+                            "pageNumber": 0,
+                            "startIndex": 551,
+                            "endIndex": 552
+                        }
+                    ],
+                    "value": "CO",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "3cf84721-d30b-4231-91d5-9218357fc3b6",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "7582d09a-3575-4f7f-92f9-5867a3f262ec",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_382_753_436_788",
+                                    "word": "CO",
+                                    "startX": 382,
+                                    "startY": 753,
+                                    "endX": 436,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 551,
+                                    "endIndex": 552
+                                }
+                            ],
+                            "value": "CO",
+                            "fieldId": "3cf84721-d30b-4231-91d5-9218357fc3b6",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "c15c9da3-0b9f-429e-8621-d59a9e71df90",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_382_753_436_788",
+                                    "word": "CO",
+                                    "startX": 382,
+                                    "startY": 753,
+                                    "endX": 436,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 551,
+                                    "endIndex": 552
+                                }
+                            ],
+                            "value": "CO",
+                            "fieldId": "3cf84721-d30b-4231-91d5-9218357fc3b6",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 26
+                },
+                {
+                    "id": "7f89f56f-9105-4fce-ac18-0e5db561b0bb",
+                    "name": "Policy Holder Street Address",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_243_704_351_739",
+                            "word": "149TH",
+                            "startX": 243,
+                            "startY": 704,
+                            "endX": 351,
+                            "endY": 739,
+                            "pageNumber": 0,
+                            "startIndex": 465,
+                            "endIndex": 469
+                        },
+                        {
+                            "id": "token_0_364_704_449_739",
+                            "word": "AVE",
+                            "startX": 364,
+                            "startY": 704,
+                            "endX": 449,
+                            "endY": 739,
+                            "pageNumber": 0,
+                            "startIndex": 471,
+                            "endIndex": 473
+                        },
+                        {
+                            "id": "token_0_192_704_228_740",
+                            "word": "W",
+                            "startX": 192,
+                            "startY": 704,
+                            "endX": 228,
+                            "endY": 740,
+                            "pageNumber": 0,
+                            "startIndex": 463,
+                            "endIndex": 463
+                        },
+                        {
+                            "id": "token_0_100_703_180_740",
+                            "word": "2780",
+                            "startX": 100,
+                            "startY": 703,
+                            "endX": 180,
+                            "endY": 740,
+                            "pageNumber": 0,
+                            "startIndex": 458,
+                            "endIndex": 461
+                        }
+                    ],
+                    "value": "2780 W 149TH AVE",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "b50823d6-06ca-4e95-9d4e-1d88255e329a",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "8bfd0ecb-1ce9-4719-be80-bd30b5c352d7",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_243_704_351_739",
+                                    "word": "149TH",
+                                    "startX": 243,
+                                    "startY": 704,
+                                    "endX": 351,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 465,
+                                    "endIndex": 469
+                                },
+                                {
+                                    "id": "token_0_364_704_449_739",
+                                    "word": "AVE",
+                                    "startX": 364,
+                                    "startY": 704,
+                                    "endX": 449,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 471,
+                                    "endIndex": 473
+                                },
+                                {
+                                    "id": "token_0_192_704_228_740",
+                                    "word": "W",
+                                    "startX": 192,
+                                    "startY": 704,
+                                    "endX": 228,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 463,
+                                    "endIndex": 463
+                                },
+                                {
+                                    "id": "token_0_100_703_180_740",
+                                    "word": "2780",
+                                    "startX": 100,
+                                    "startY": 703,
+                                    "endX": 180,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 458,
+                                    "endIndex": 461
+                                }
+                            ],
+                            "value": "2780 W 149TH AVE",
+                            "fieldId": "b50823d6-06ca-4e95-9d4e-1d88255e329a",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "526ed576-167c-4bd2-a22d-a712e93106ed",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_243_704_351_739",
+                                    "word": "149TH",
+                                    "startX": 243,
+                                    "startY": 704,
+                                    "endX": 351,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 465,
+                                    "endIndex": 469
+                                },
+                                {
+                                    "id": "token_0_364_704_449_739",
+                                    "word": "AVE",
+                                    "startX": 364,
+                                    "startY": 704,
+                                    "endX": 449,
+                                    "endY": 739,
+                                    "pageNumber": 0,
+                                    "startIndex": 471,
+                                    "endIndex": 473
+                                },
+                                {
+                                    "id": "token_0_192_704_228_740",
+                                    "word": "W",
+                                    "startX": 192,
+                                    "startY": 704,
+                                    "endX": 228,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 463,
+                                    "endIndex": 463
+                                },
+                                {
+                                    "id": "token_0_100_703_180_740",
+                                    "word": "2780",
+                                    "startX": 100,
+                                    "startY": 703,
+                                    "endX": 180,
+                                    "endY": 740,
+                                    "pageNumber": 0,
+                                    "startIndex": 458,
+                                    "endIndex": 461
+                                }
+                            ],
+                            "value": "2780 W 149TH AVE",
+                            "fieldId": "b50823d6-06ca-4e95-9d4e-1d88255e329a",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 27
+                },
+                {
+                    "id": "d655ac8d-8348-4320-80c6-88cbdf10ecb9",
+                    "name": "Policy Holder Zip",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_449_753_644_788",
+                            "word": "80023-9498",
+                            "startX": 449,
+                            "startY": 753,
+                            "endX": 644,
+                            "endY": 788,
+                            "pageNumber": 0,
+                            "startIndex": 554,
+                            "endIndex": 563
+                        }
+                    ],
+                    "value": "80023-9498",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "fe299b8a-4fed-412e-a7d8-54c811051efe",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "b2d02959-0194-45cf-89e7-67787e650f84",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_449_753_644_788",
+                                    "word": "80023-9498",
+                                    "startX": 449,
+                                    "startY": 753,
+                                    "endX": 644,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 554,
+                                    "endIndex": 563
+                                }
+                            ],
+                            "value": "80023-9498",
+                            "fieldId": "fe299b8a-4fed-412e-a7d8-54c811051efe",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "515dc540-6268-4d63-bb77-db23f66b79c1",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_449_753_644_788",
+                                    "word": "80023-9498",
+                                    "startX": 449,
+                                    "startY": 753,
+                                    "endX": 644,
+                                    "endY": 788,
+                                    "pageNumber": 0,
+                                    "startIndex": 554,
+                                    "endIndex": 563
+                                }
+                            ],
+                            "value": "80023-9498",
+                            "fieldId": "fe299b8a-4fed-412e-a7d8-54c811051efe",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 28
+                },
+                {
+                    "id": "1cecc578-5891-4cf0-ab8e-ea15eebfe8e9",
+                    "name": "Policy Number",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 155,
+                    "endIndex": 165,
+                    "confidence": 0.95,
+                    "pageNumber": 1,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "colorCode": "#D93E3E",
+                        "isCriticalField": true,
+                        "isRCSRuleApplied": true
+                    },
+                    "wordCoordinates": [
+                        {
+                            "id": "token_0_98_510_328_547",
+                            "word": "A7992442090",
+                            "startX": 98,
+                            "startY": 510,
+                            "endX": 328,
+                            "endY": 547,
+                            "pageNumber": 0,
+                            "startIndex": 155,
+                            "endIndex": 165
+                        }
+                    ],
+                    "value": "A7992442090",
+                    "question": "Extract the Policy Number from the given document, following these rules:\n\nReturn exactly as shown in the document \u2013 preserve casing, spaces, punctuation, prefixes, suffixes, and all leading/trailing zeros.\nFormats allowed \u2013 numeric or alphanumeric, may include spaces, dashes, slashes, or letters (e.g., GG 000123-AX).\nPrimary source \u2013 Use the value that appears next to any of the following labels (case-insensitive, punctuation variants allowed): Policy Number, Policy No, Policy #, Policy ID, Policy, Policy/Number, or Policy:.\nIf multiple policy numbers appear and an update is stated (e.g., \u201cpolicy number changed from X to Y\u201d), return only the newer value.\n\nCarrier-specific fallback rules \u2013 Only if no explicit policy number is found:\n\u2003\u2003- For The Hartford, use the Ref No. exactly as printed.\n\u2003\u2003- For Citizens Property Insurance, use the Certificate Number exactly as printed.\n\nDo NOT capture claim numbers, account numbers, quote numbers, invoice numbers, form numbers, NAIC codes, producer/agent numbers, application numbers, VINs, FEINs, or dates.\nIf no valid value is found after applying the above rules, return nothing \u2014 leave the output completely blank, without any placeholder text or explanation.\nOutput only the policy number exactly as it appears in the document.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "33cd5eb0-084a-4133-a8dd-7f4eb92496e8",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "ec153a1f-646f-47f7-97a5-705a8bdb7691",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 155,
+                            "endIndex": 165,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_98_510_328_547",
+                                    "word": "A7992442090",
+                                    "startX": 98,
+                                    "startY": 510,
+                                    "endX": 328,
+                                    "endY": 547,
+                                    "pageNumber": 0,
+                                    "startIndex": 155,
+                                    "endIndex": 165
+                                }
+                            ],
+                            "value": "A7992442090",
+                            "fieldId": "33cd5eb0-084a-4133-a8dd-7f4eb92496e8",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "1773a040-699d-4469-bcaf-565bee4830ce",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 155,
+                            "endIndex": 165,
+                            "confidence": 0.8,
+                            "pageNumber": 1,
+                            "wordCoordinates": [
+                                {
+                                    "id": "token_0_98_510_328_547",
+                                    "word": "A7992442090",
+                                    "startX": 98,
+                                    "startY": 510,
+                                    "endX": 328,
+                                    "endY": 547,
+                                    "pageNumber": 0,
+                                    "startIndex": 155,
+                                    "endIndex": 165
+                                }
+                            ],
+                            "value": "A7992442090",
+                            "fieldId": "33cd5eb0-084a-4133-a8dd-7f4eb92496e8",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 29
+                },
+                {
+                    "id": "6dad0439-8234-447d-9890-07152ac44c34",
+                    "name": "Co Policy Holder Name",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.7,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "",
+                    "question": "Extract the Co-Policy Holder Name from the document and output only the second name, exactly as it appears, following these rules:\nA. What to capture:\nExtract only the second policy holder listed.\nIf more than two names are listed (e.g., ALEX, MARIA, and JOHN SMITH), ignore the 3rd, 4th, etc. names \u2014 only capture the 2nd person\u2019s name.\nIf names are separated by \u201cand\u201d, \u201c&\u201d, commas, or other punctuation, extract only the second person\u2019s name \u2014 do not include the connectors themselves (\u201cand\u201d or \u201c&\u201d).\nDo not alter or reformat the name in any way.\nPreserve original case, spacing, punctuation, and any special characters exactly as they appear.\nIf only the first name is given for the second insured person, return only that (do not add or infer a surname).\n\nB. Output format:\nReturn only the name of the second policy holder.\nThe output should not include any labels, notes, or anything apart from the name itself.\n\nC. Examples of correct output:\nALEX and MARIA KIM \u2192 \u201cMARIA KIM\u201d\nALEX KIM and MARIA \u2192 \u201cMARIA\u201d\nJOHN DOE and JANE SMITH \u2192 \u201cJANE SMITH\u201d\nENRIQUE MORENO, LAURA MORENO J, and JUAN PEREZ \u2192 \u201cLAURA MORENO J\u201d\nALEX, MARIA, JOHN \u2192 \u201cMARIA\u201d\nLOOKOUT IRVIN, CHRISSIE & LOOKOUT, STEVEN \u2192 \u201cLOOKOUT, STEVEN\u201d\n\nD. No inferences or transformations:\nIf only one policy holder is listed, return blank.\nDo not guess or infer missing parts of a name.\nDo not include the 3rd, 4th, or further names even if present.\n\nE. Special cases:\nIf there\u2019s no second name listed (i.e., only one insured person), return blank.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "87d3d0a3-d4d3-497a-890f-8ebd8afce19f",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "f9e72649-1fcd-4918-8098-1fcacefcdc35",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "87d3d0a3-d4d3-497a-890f-8ebd8afce19f",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "f1f2469c-a1cd-4dff-80dd-1b7bcbf725ad",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "87d3d0a3-d4d3-497a-890f-8ebd8afce19f",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 30
+                },
+                {
+                    "id": "b29dc65c-321c-44c1-9b8e-41bdf989df55",
+                    "name": "Policy Identification Number",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.7,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "hideInUI": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "",
+                    "question": "Extract the Policy Identification Number only if the document clearly belongs to TRAVELERS (check for indicators such as the \u201cTRAVELERS\u201d logo, the header \u201cTHE TRAVELERS INSURANCE COMPANIES,\u201d). Once confirmed, locate the field labeled as \u201cPolicy Identification Number\u201d. Return the full value exactly as displayed. If no such field is found, or if the document is not from TRAVELERS, return blank.",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "3639a0f9-c07f-4106-9f70-ff039e4278e5",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "344d3afb-95ba-4a9c-ae8a-571c26059670",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "3639a0f9-c07f-4106-9f70-ff039e4278e5",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "fc1de6ab-35da-441b-887f-2d8a00437114",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "",
+                            "fieldId": "3639a0f9-c07f-4106-9f70-ff039e4278e5",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 36
+                },
+                {
+                    "id": "fff74f0b-bb3c-4e1f-b6b8-eac524730074",
+                    "name": "Document Type Field",
+                    "type": "Single Value",
+                    "dataType": "string",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 0,
+                    "endY": 0,
+                    "startIndex": 0,
+                    "endIndex": 0,
+                    "confidence": 0.95,
+                    "pageNumber": 0,
+                    "additionalAttributes": {
+                        "displayAsField": true,
+                        "hideInUI": true
+                    },
+                    "wordCoordinates": [],
+                    "value": "New Business Renewal",
+                    "question": "**Task**:\n        Classify the type of this document based on its content.\n        \n        **Instructions**:\n        \n        - Classify the document strictly using one of the following document types:\n\nID Card:\n   - Keywords/indicators: ID, ID card, insurance card, identification card.\n   - Structure resembles an insurance ID card.\n\nTemporary:\n   - Temporary documents that begin a policy.\n   - Includes binders, applications, or temporary coverage notices.\n   - Identifiable by title, application number, or signature.\n\nReinstatement:\n   - Sent after a cancellation notice but restores coverage.\n   - Keywords: acknowledgement of payment, disregard cancel notice, withdraw cancellation, rescission/recession of cancellation.\n\nNew Business Renewal:\n   - Any declaration or statement of coverage.\n   - Keywords/phrases: new business, Renew, renewal, declaration, Re-issues, Re-write, statement of coverage, certificate of insurance, evidence of insurance.\n   - Can have multiple headings.\n\nPolicy Change:\n   - Any document reflecting a change to the policy or interest removal/termination of third party's interest.\n   - Keywords: amendment, endorsement, third party interest termination, interest termination, termination of loss payee interest, interest terminated. \n   - Do NOT classify \"policy termination\" or \"Notice of Termination Lienholder\" as a policy change.\n   - Multiple vehicles are present on the document and one of the vehicle is 'Deleted/removed', classify as \"Policy Change\".\n   - If the 'endorsement/amendment' date and the 'policy effective date' are the same classify it is a \"New Business Renewal\". Do not classify it as Policy Change.\n\nCancellation:\n   - Actual policy cancellation (not intent, Lienholder Interest removals that contain a cancel reason (non payment, company cancelled, underwriting, policyholder request).\n   - Keywords: Lienholder Notice of Termination, Notice of Termination Lienholder, suspension of policy, Auto Policy Cancellation, Cancellation notice for non-payment of premium, termination of policy, cancellation of policy, removal of policy, delete policy/vehicle.\n   - Do NOT include \"interest\"-only cancellations unless the title clearly states \"Notice of Termination Lienholder\" or \"Lienholder Notice of Termination\".\n   - If there is only 1 vehicle on the policy & if the vehicle was deleted/removed classify it as \"Cancellation\".\n\nInvalid Document:\n   - Any document not fitting the above categories.\n   - Includes \"intent to cancel\" or unrelated/non-insurance documents.\n        \n        - Focus on the main policy/insurance content when determining document type\n        - **IMPORTANT**: Always consider document titles, headers, and section names that indicate the document's \nprimary purpose (e.g., \"DECLARATION\", \"CANCELLATION NOTICE\", \"POLICY CHANGE\", \"RENEWAL\", etc.)\n        - Ignore only generic sections such as:\n            - General notices or instructions to third parties (lienholders, banks, etc.)\n            - Standard disclaimers or legal boilerplate language\n            - Contact information and business hours\n            - Website references or procedural instructions\n            - Template language about endorsements or general policy terms\n            - Administrative notifications that don't relate to the main document purpose\n        \n        - If the document doesn't belong to any of the specified document types, classify it as \"Invalid Document\"\n        - Always return one of the above types as the classification result\n        \n        **Output Format**:\n        Return the result in the following JSON format, with no additional explanation:\n        ```json\n        {\"document_type\": \"Document Type\"}\n        ```",
+                    "correctedBy": "Custom Wrapper",
+                    "fieldId": "69c063df-2a75-4f95-89ac-fa2c924b0d52",
+                    "extractedUsing": "GENIE",
+                    "alternateCandidates": [
+                        {
+                            "id": "fe132509-0e5b-45c0-a0d0-ca116437be79",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "New Business Renewal",
+                            "fieldId": "69c063df-2a75-4f95-89ac-fa2c924b0d52",
+                            "extractedUsing": "GENIE",
+                            "alternateCandidates": [],
+                            "order": 0
+                        },
+                        {
+                            "id": "48f74589-2cc0-4e7b-bd93-6b9639fb525a",
+                            "type": "Single Value",
+                            "dataType": "string",
+                            "startX": 0,
+                            "startY": 0,
+                            "endX": 0,
+                            "endY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "confidence": 0.8,
+                            "pageNumber": 0,
+                            "wordCoordinates": [],
+                            "value": "ID Card",
+                            "fieldId": "69c063df-2a75-4f95-89ac-fa2c924b0d52",
+                            "extractedUsing": "COGNI",
+                            "alternateCandidates": [],
+                            "order": 0
+                        }
+                    ],
+                    "order": 37
+                }
+            ],
+            "pages": [
+                {
+                    "id": "6094ffb8-0d66-44ba-9d8b-29fba1398b79_document-1_page-1",
+                    "pageNumber": 1,
+                    "status": "PAGE_COMPLETED",
+                    "imageUrl": "https://app.swbcprod.infrrd.cloud/doc/get/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/6094ffb8-0d66-44ba-9d8b-29fba1398b79/6094ffb8-0d66-44ba-9d8b-29fba1398b79_document-1/optimized-images/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1.jpg",
+                    "pageFilePath": "/var/data/efs/14124a94-0de8-4c74-bfe9-2a921cb0dac2/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/6094ffb8-0d66-44ba-9d8b-29fba1398b79/6094ffb8-0d66-44ba-9d8b-29fba1398b79_document-1/pages/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1.pdf",
+                    "imageFilePath": "/var/data/efs/14124a94-0de8-4c74-bfe9-2a921cb0dac2/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/6094ffb8-0d66-44ba-9d8b-29fba1398b79/6094ffb8-0d66-44ba-9d8b-29fba1398b79_document-1/images/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1.jpg",
+                    "height": 3508,
+                    "width": 2479,
+                    "dpiRes": "300",
+                    "startX": 0,
+                    "startY": 0,
+                    "endX": 2479,
+                    "endY": 3508,
+                    "rotation": "360",
+                    "optimizedImageUrl": "https://app.swbcprod.infrrd.cloud/doc/get/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/6094ffb8-0d66-44ba-9d8b-29fba1398b79/6094ffb8-0d66-44ba-9d8b-29fba1398b79_document-1/optimized-images/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78-1.jpg"
+                }
+            ],
+            "documentExtractionStartDate": "2026-08-11 01:43:59:214",
+            "documentReceivedDate": "2026-08-11 01:42:57:584",
+            "lastModifiedDate": "2026-08-12 08:40:18:318",
+            "correctedUserId": "3051807b-e40c-4b7e-991f-623db4ff6d6b",
+            "correctionQueueAddTime": "2026-08-11 01:47:10:743",
+            "correctionStartTime": "2026-08-12 08:40:02:529",
+            "correctionTime": "15107",
+            "correctionEndTime": "2026-08-12 08:40:17:636",
+            "numberOfFieldsCorrected": "1",
+            "sourceDocumentUrl": "https://app.swbcprod.infrrd.cloud/doc/get/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/6094ffb8-0d66-44ba-9d8b-29fba1398b79/source/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78.pdf",
+            "isDocSigned": false,
+            "isDuplicate": false,
+            "correctedByUserInfo": {
+                "DATA_CORRECTION": {
+                    "queueAddTime": "2026-08-12 08:40:02:529",
+                    "correctedByUserEmail": "apurwa.pawar@swbc.com",
+                    "correctedByUserName": "apurwa.pawar@swbc.com",
+                    "correctionEndTime": "2026-08-12 08:40:17:636",
+                    "correctionStartTime": "2026-08-12 08:40:02:529"
+                }
+            },
+            "version": 1,
+            "classificationCorrectionHistory": [
+                {
+                    "version": 1,
+                    "correctionInfo": [
+                        {
+                            "correctionType": "DATA_CORRECTION",
+                            "correctedByUserInfo": {
+                                "correctedBy": "3051807b-e40c-4b7e-991f-623db4ff6d6b",
+                                "correctionStartTime": null,
+                                "correctionEndTime": null,
+                                "correctedByUserName": "apurwa.pawar@swbc.com",
+                                "correctedByUserEmail": "apurwa.pawar@swbc.com",
+                                "correctionType": null,
+                                "queueAddTime": null
+                            },
+                            "correctedDocTypeHierarchy": null
+                        }
+                    ]
+                }
+            ],
+            "parentDocumentPageCount": 1,
+            "docSigned": false,
+            "optionalParams": {
+                "environment": "PROD",
+                "business_type": "AUTO",
+                "transaction_source": "IMCOVERED",
+                "transaction_origin": "IMCOVERED",
+                "account_number": "005702",
+                "agency_no": "01",
+                "original_file_name": "24e1b1f6-a7c7-4534-b7c5-e9220ec91e78.pdf",
+                "doc_received_date": "08/10/2026",
+                "client_id": "1176",
+                "transaction_channel": "DataCapture",
+                "transaction_id": "09089164a335a3f9",
+                "client_name": "Canvas Credit Union",
+                "file_uploaded_timestamp": "2026-08-11T01:42:34.924000Z",
+                "channel_name": "IMCovered",
+                "email_sender": "jessicamiller99@icloud.com",
+                "is_copernicus": "true",
+                "scan_id": "1176",
+                "DocumentDueDate": "2026-08-13T11:59:59Z",
+                "DocumentCriticalDate": "2026-08-12T11:59:59Z",
+                "BusinessDueDate": "2026-08-13T11:59:59Z",
+                "BusinessCriticalDate": "2026-08-12T11:59:59Z",
+                "infrrdFileName": "24e1b1f6-a7c7-4534-b7c5-e9220ec91e78.pdf"
+            },
+            "correctedUserName": "apurwa.pawar@swbc.com",
+            "totalBlankPages": 0,
+            "totalPages": 1
+        }
+    ]
+}

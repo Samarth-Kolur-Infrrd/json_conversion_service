@@ -1,0 +1,251 @@
+[
+    {
+        "upload_request_id": "9d363dc0-e655-43c5-9f29-acf18351b0e4",
+        "upload_request_status": "PROCESSING_COMPLETED",
+        "document_id": "0da2c8de-b9de-46e3-a96a-0cbc0a4eb972",
+        "document_name": "003332621800129275_003_1-2_2-2.tif",
+        "document_file_type": "tiff",
+        "document_processing_status": "PROCESSING_COMPLETED",
+        "file_uploaded_timestamp": "2026-08-12 08:40:41:551",
+        "document_received_timestamp": "2026-08-06 20:45:56:117",
+        "document_extraction_start_timestamp": "2026-08-06 22:08:48:548",
+        "business_type": "AUTO",
+        "document_type": "Policy Change Auto",
+        "document_page_count": 2,
+        "original_file_page_count": 0,
+        "original_file_blank_pages": 0,
+        "list_document": true,
+        "optional_parameters": {
+            "environment": "PROD",
+            "business_type": "AUTO",
+            "transaction_source": "MAIL",
+            "transaction_origin": "LISTBILL",
+            "agency_no": "01",
+            "original_file_name": "003332621800129275_003",
+            "doc_received_date": "2026-08-06",
+            "client_id": "1725",
+            "scan_date": "2026-08-06 15:43:59",
+            "transaction_channel": "DataCapture",
+            "client_name": "McCoy FCU",
+            "mailroom_batch_id": "003332621800129275",
+            "scan_operator_id": "barbara james",
+            "file_uploaded_timestamp": "2026-08-06T15:45:55.068768-05:00",
+            "scan_jobname": "Auto LB S IDP",
+            "channel_name": "LISTBILL",
+            "is_copernicus": "true",
+            "scan_id": "1725",
+            "DocumentDueDate": "2026-08-12T12:00:00Z",
+            "DocumentCriticalDate": "2026-08-11T12:00:00Z",
+            "BusinessDueDate": "2026-08-12T12:00:00Z",
+            "BusinessCriticalDate": "2026-08-11T12:00:00Z",
+            "infrrdFileName": "003332621800129275_003.tif"
+        },
+        "source_document_url": "https://app.swbcprod.infrrd.cloud/doc/get/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/6/9d363dc0-e655-43c5-9f29-acf18351b0e4/source/003332621800129275_003.tif",
+        "fields": [
+            {
+                "field_name": "agent_name",
+                "field_value": "GEICO Casualty Company",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "carrier_agent_email",
+                "field_value": "",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "carrier_agent_fax",
+                "field_value": "",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "carrier_agent_phone",
+                "field_value": "1-877-347-3281",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "carrier_name",
+                "field_value": "GEICO Casualty Company",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "change_effective_date",
+                "field_value": "2026-07-28",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "doc_issue_date",
+                "field_value": "07/28/2026",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "insurance_type",
+                "field_value": "CONTINUOUS",
+                "field_type": "Object",
+                "field_data_type": "Dropdown"
+            },
+            {
+                "field_name": "loan_number",
+                "field_value": "",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_expiration_date",
+                "field_value": "12/14/2026",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_holder_address",
+                "field_value": "11251 DACRE LN ORLANDO FL 32824-4417",
+                "field_type": "Split Field",
+                "field_data_type": "Address"
+            },
+            {
+                "field_name": "policy_holder_address_street_name",
+                "field_value": "DACRE LN",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_holder_address_unit_number",
+                "field_value": "",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_holder_address_city",
+                "field_value": "ORLANDO",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_holder_name",
+                "field_value": "MARITZA J VEGA",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_holder_address_state",
+                "field_value": "FL",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_holder_address_street_address",
+                "field_value": "11251 DACRE LN",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_holder_address_zipcode",
+                "field_value": "32824-4417",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "policy_number",
+                "field_value": "6132721629",
+                "field_type": "Single Value",
+                "field_data_type": "String"
+            },
+            {
+                "field_name": "collateral_id",
+                "field_value": "3MVDMAAL2MM264312",
+                "field_type": "Single Value",
+                "field_data_type": "String",
+                "titan_field_name": "* Collateral ID",
+                "titan_field_id": "aeb53a75-8194-425f-9f6c-6f7852277793",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "collateral_make",
+                "field_value": "Mazda",
+                "field_type": "Single Value",
+                "field_data_type": "String",
+                "titan_field_name": "* Collateral Make",
+                "titan_field_id": "c3adf4a0-3302-405f-9844-1c7efb2f4945",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "collateral_model",
+                "field_value": "",
+                "field_type": "Single Value",
+                "field_data_type": "String",
+                "titan_field_name": "* Collateral Model",
+                "titan_field_id": "8beb8e5b-387a-4f9a-a54d-923610f55f65",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "collateral_year",
+                "field_value": "2021",
+                "field_type": "Single Value",
+                "field_data_type": "String",
+                "titan_field_name": "* Collateral Year",
+                "titan_field_id": "8f5ca6de-6bde-4362-9814-5986ec0dbb8f",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "coll_cvg",
+                "field_value": "",
+                "field_type": "Object",
+                "field_data_type": "Dropdown",
+                "titan_field_name": "* Collision Coverage Flag",
+                "titan_field_id": "6102199f-ee12-4d72-b24b-895ebcc95732",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "collision_deductible",
+                "field_value": "500",
+                "field_type": "Single Value",
+                "field_data_type": "String",
+                "titan_field_name": "* Collision Deductible",
+                "titan_field_id": "d92d66c1-b2a0-4838-802d-238e004389cb",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "comp_cvg",
+                "field_value": "",
+                "field_type": "Object",
+                "field_data_type": "Dropdown",
+                "titan_field_name": "* Comprehensive Coverage Flag",
+                "titan_field_id": "a626cfc4-3751-45c1-9104-1d04a07163f4",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "comprehensive_deductible",
+                "field_value": "500",
+                "field_type": "Single Value",
+                "field_data_type": "String",
+                "titan_field_name": "* Comprehensive Deductible",
+                "titan_field_id": "ae68bea2-3731-4e8a-b5b4-95c50f76a689",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "lienholder_name",
+                "field_value": "MCCOY FCU",
+                "field_type": "Single Value",
+                "field_data_type": "String",
+                "titan_field_name": "* Lienholder",
+                "titan_field_id": "370d2611-ca1a-466c-b37b-10ccf938fb35",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            },
+            {
+                "field_name": "vehicle_delete",
+                "field_value": "N",
+                "field_type": "Object",
+                "field_data_type": "Dropdown",
+                "titan_field_name": "* Vehicle Delete",
+                "titan_field_id": "06b2b2d7-8a56-48a0-91f3-d7121bac84fe",
+                "titan_object_id": "8afcac04-6ae5-4ce0-8f5f-416c92e68404"
+            }
+        ]
+    }
+]
