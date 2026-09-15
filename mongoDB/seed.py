@@ -10,7 +10,7 @@ db = client["json_conversion_service"]
 # json_path = os.path.join(BASE_DIR, "json_files", "field_names_mappings.json")
 # print(json_path)
 
-with open("./fastapi/json_files/field_names_mappings.json","r") as map:
+with open("./json_files/field_names_mappings.json","r") as map:
     mappings = json.load(map)
 
 FieldTransformationConfig = db["field_transformation_config"]
