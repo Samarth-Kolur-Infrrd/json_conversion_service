@@ -1,4 +1,3 @@
-from converter_utils.get_mapping import build_mapping
 from converter_utils.value_resolve import resolve_value
 
 def build_common_fields(document, object_list_field, mapping_lookup):

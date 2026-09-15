@@ -1,6 +1,5 @@
 import logging
 
-from converter_utils.value_resolve import resolve_value
 from converter_utils.build_metadata import build_metadata
 from converter_utils.build_common_fields import build_common_fields
 from converter_utils.build_group_fields import build_group_fields
